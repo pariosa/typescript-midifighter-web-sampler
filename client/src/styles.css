@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: white;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 100vh;
+}
+
+.browser {
+  background: #020617;
+  border-right: 1px solid #334155;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sampler {
+  padding: 36px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.power-button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 18px 28px;
+  border-radius: 14px;
+  border: 0;
+  background: #22c55e;
+  color: #052e16;
+  cursor: pointer;
+}
+
+.bank-controls {
+  display: flex;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.bank-controls button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #475569;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+}
+
+.pads {
+  display: grid;
+  grid-template-columns: repeat(4, 145px);
+  gap: 18px;
+}
+
+.pad {
+  position: relative;
+  height: 125px;
+  border: 2px solid #475569;
+  border-radius: 16px;
+  background: #1e293b;
+  color: white;
+  cursor: pointer;
+  padding: 14px;
+  text-align: left;
+}
+
+.pad:hover {
+  background: #334155;
+}
+
+.pad:active {
+  transform: scale(0.97);
+}
+
+.pad.drag-over {
+  border-color: #38bdf8;
+  background: #075985;
+}
+
+.pad-number {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.pad-name {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  font-size: 12px;
+  color: #cbd5e1;
+  word-break: break-word;
+}
+
+.clear-pad {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 22px;
+  color: #f87171;
+}
+
+.sample {
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+  background: #1e293b;
+  cursor: grab;
+  font-size: 13px;
+}
+
+.sample:hover {
+  background: #334155;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 12px;
+}
